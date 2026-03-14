@@ -1,0 +1,205 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #eef2fb, #f9f5ff);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #ffd6f0;
+}
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* HERO (Home page) */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.hero-buttons a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.primary-btn {
+  background: white;
+  color: #4f46e5;
+}
+.primary-btn:hover {
+  background: #e0e0ff;
+}
+.secondary-btn {
+  background: #ff6b6b;
+  color: white;
+}
+.secondary-btn:hover {
+  background: #ff4b4b;
+}
+
+/* FORM (Sell Page) */
+.form-container {
+  width: 400px;
+  max-width: 90%;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+.form-container input,
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+.form-container button {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-container button:hover {
+  background: linear-gradient(to right, #4f46e5, #5a36b2);
+}
+
+/* MARKETPLACE */
+.page-title {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 32px;
+  color: #333;
+}
+
+.searchBox {
+  text-align: center;
+  margin: 20px;
+}
+.searchBox input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h2 {
+  color: #4f46e5;
+  margin: 12px 0 8px 0;
+}
+
+.card p {
+  color: #555;
+  font-size: 14px;
+}
+
+.card .category {
+  display: inline-block;
+  background: #e0e0ff;
+  color: #4f46e5;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin: 6px 0;
+}
+
+.card button {
+  background: linear-gradient(to right, #ff6b6b, #ff4b4b);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card button:hover {
+  background: #ff3333;
+}
+.feature-card{
+background:white;
+padding:30px;
+border-radius:12px;
+width:250px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.feature-card:hover{
+transform:translateY(-8px);
+}
+.features-container {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; 
+  flex-wrap: wrap; 
+  margin: 50px 0;
+}
