@@ -5,8 +5,10 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
+// Simulation variable for Login Status
 let isLoggedIn = false;
 
+// Middleware: Protects routes from non-logged-in users
 const checkAuth = (req, res, next) => {
     if (isLoggedIn) {
         next();
@@ -18,6 +20,7 @@ const checkAuth = (req, res, next) => {
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+/* --- DATABASE SETUP --- */
 const db = new sqlite3.Database("./resellbazaar.db");
 
 db.serialize(() => {
@@ -44,6 +47,7 @@ db.serialize(() => {
     `);
 });
 
+/* --- AUTH ROUTES --- */
 
 app.get("/login", (req, res) => {
     res.sendFile(path.join(__dirname, "views/auth.html"));
