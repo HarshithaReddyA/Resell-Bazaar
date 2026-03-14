@@ -203,3 +203,29 @@ transform:translateY(-8px);
   flex-wrap: wrap; 
   margin: 50px 0;
 }
+/* Better Product Cards */
+.price-tag { color: #2ecc71; font-size: 22px; margin: 10px 0; }
+
+.category-badge {
+    position: absolute;
+    background: #667eea;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin: 10px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 15px;
+}
+.feature-card h3 { color: #764ba2; margin-bottom: 10px; }

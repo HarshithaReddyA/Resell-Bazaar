@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Resell Bazaar</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .auth-card { width: 350px; margin: 80px auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .tab-btn { width: 48%; padding: 10px; border: none; cursor: pointer; background: #f0f0f0; font-weight: bold; }
+        .active { background: #667eea; color: white; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="logo">🛍 Resell Bazaar</h2>
+        <div><a href="/">Home</a><a href="/products">Marketplace</a></div>
+    </nav>
+
+    <div class="auth-card">
+        <div style="margin-bottom: 20px;">
+            <button class="tab-btn active">Login</button>
+            <button class="tab-btn">Register</button>
+        </div>
+        <form action="/login" method="POST">
+            <input type="email" placeholder="Email Address" required style="width:100%; padding:10px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;">
+            <input type="password" placeholder="Password" required style="width:100%; padding:10px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;">
+            <button type="submit" class="secondary-btn" style="width:100%; border:none; padding:12px; cursor:pointer;">Continue</button>
+        </form>
+    </div>
+</body>
+</html>
